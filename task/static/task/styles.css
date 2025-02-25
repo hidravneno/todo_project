@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Encabezados */
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Estilos para la tarjeta de la lista de tareas */
+.card {
+    border-radius: 12px;
+    border: none;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para los elementos de la lista de tareas */
+.task-item {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item:hover {
+    background-color: #e3f2fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+    font-size: 1.2rem;
+    color: #495057;
+    font-weight: 600;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Estilos para los botones */
+.btn {
+    border-radius: 8px;
+    margin-left: 8px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: #212529;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: #fff;
+}

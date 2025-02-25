@@ -1,9 +1,9 @@
 from django import forms
-from .models import Task  # Corregido: "task" → "Task"
+from .models import Task  
 
-class TaskForm(forms.ModelForm):  # Corregido: "taskForm" → "TaskForm"
+class TaskForm(forms.ModelForm):  
     class Meta:
-        model = Task  # Corregido: "task" → "Task"
+        model = Task 
         fields = ['title', 'description', 'complete']
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter task...'}),
