@@ -14,8 +14,12 @@ body {
 /* Contenedor principal */
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 /* Encabezados */
@@ -25,16 +29,24 @@ h2 {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
+    width: 100%;
 }
 
-/* Estilos para la tarjeta de la lista de tareas */
+/* Estilos para la tarjeta */
 .card {
-    border-radius: 12px;
+    width: 250px; /* Ancho fijo para hacerlas más rectangulares */
+    height: 300px; /* Altura definida */
+    border-radius: 10px;
     border: none;
-    padding: 25px;
+    padding: 20px;
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .card:hover {
@@ -43,19 +55,18 @@ h2 {
 }
 
 .card h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 /* Estilos para los elementos de la lista de tareas */
 .task-item {
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px;
+    width: 100%;
+    padding: 12px;
     border-radius: 8px;
-    margin-bottom: 12px;
     background: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -68,23 +79,10 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.task-title {
-    font-size: 1.2rem;
-    color: #495057;
-    font-weight: 600;
-}
-
-.task-item.completed .task-title {
-    text-decoration: line-through;
-    color: #6c757d;
-    font-style: italic;
-}
-
-/* Estilos para los botones */
+/* Botones */
 .btn {
     border-radius: 8px;
-    margin-left: 8px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-size: 0.9rem;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -110,4 +108,15 @@ h2 {
 .btn-danger {
     background: linear-gradient(135deg, #dc3545, #c82333);
     color: #fff;
+}
+
+/* Tarjetas cuadradas */
+.square-card {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
 }

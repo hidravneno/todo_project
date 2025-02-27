@@ -23,9 +23,12 @@
                     {{ form.title }}
                 </div>
                 <div class="mb-3">
-                    <label class="form-label
-                    fw-bold">Descripción</label>
+                    <label class="form-label fw-bold">Descripción</label>
                     {{ form.description }}
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Fecha de vencimiento</label> <!-- Agregar un campo para la fecha de vencimiento -->
+                    {{ form.due_date }}
                 </div>
                 <div class="mb-3 form-check">
                     {{ form.completed }}
